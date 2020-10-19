@@ -5,8 +5,12 @@ public class Watermelons {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
 
-        System.out.println(
-                input != 2 && input % 2 == 0 ? "YES" : "NO"
+        System.out.print(
+                Watermelons.getAnswer(input)
         );
+    }
+
+    public static String getAnswer(int input) {
+        return input != 2 && input % 2 == 0 ? "YES" : "NO";
     }
 }
